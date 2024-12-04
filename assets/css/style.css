@@ -1,0 +1,41 @@
+* {
+  background-color: #292f36;
+  color: #ffffff;
+}
+
+body {
+  padding-top: 1%;
+  background-color: #292f36;
+}
+
+.navbar-nav .nav-link {
+  font-size: medium;
+  color: #ffffff;
+}
+
+.navbar-brand {
+  padding-left: 1%;
+  display: flex;
+  position: relative;
+  justify-content: left;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  flex: content;
+  align-items: flex-end;
+  justify-content: right;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #4ecdc4;
+  font-weight: bold;
+  text-decoration: underline 2px;
+}
+
+.navbar-nav .home {
+  color: #4ecdc4;
+  font-weight: bold;
+  text-decoration: underline 2px;
+}
