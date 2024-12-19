@@ -28,7 +28,7 @@
       document.addEventListener("DOMContentLoaded", () => {
         const navbarElement = document.querySelector(".navbar-placeholder");
         if (navbarElement) {
-          fetch("/navbar.html")
+          fetch("navbar.html")
             .then((response) => response.text())
             .then((data) => {
               navbarElement.innerHTML = data;
@@ -49,7 +49,7 @@
       document.addEventListener("DOMContentLoaded", () => {
         const footerElement = document.querySelector(".footer");
         if (footerElement) {
-          fetch("/footer.html")
+          fetch("footer.html")
             .then((response) => response.text())
             .then((data) => {
               footerElement.innerHTML = data;

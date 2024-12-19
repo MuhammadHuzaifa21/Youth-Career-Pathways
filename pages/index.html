@@ -19,49 +19,55 @@
     />
   </head>
   <body>
-    <!-- Navbar -->
-    <a class="nav-link home active" href="/index.html"></a>
+    <div>
+      <!-- Navbar -->
+      <a class="nav-link home active" href="/index.html"></a>
 
-    <div class="navbar-placeholder"></div>
+      <div class="navbar-placeholder"></div>
 
-    <script>
-      // load the navbar dynamically
-      document.addEventListener("DOMContentLoaded", () => {
-        const navbarElement = document.querySelector(".navbar-placeholder");
-        if (navbarElement) {
-          fetch("/navbar.html")
-            .then((response) => response.text())
-            .then((data) => {
-              navbarElement.innerHTML = data;
-            })
-            .catch((err) => console.error("Error loading navbar:", err));
-        } else {
-          console.error("Navbar placeholder element not found!");
-        }
-      });
-    </script>
+      <script>
+        // load the navbar dynamically
+        document.addEventListener("DOMContentLoaded", () => {
+          const navbarElement = document.querySelector(".navbar-placeholder");
+          if (navbarElement) {
+            fetch("navbar.html")
+              .then((response) => response.text())
+              .then((data) => {
+                navbarElement.innerHTML = data;
+              })
+              .catch((err) => console.error("Error loading navbar:", err));
+          } else {
+            console.error("Navbar placeholder element not found!");
+          }
+        });
+      </script>
 
-    <!-- =========================================================================== -->
+      <!-- =========================================================================== -->
+      <!-- Body -->
+      <div><h1>Body</h1></div>
 
-    <!-- Footer -->
-    <div class="footer"></div>
-    <script>
-      // load the navbar dynamically
-      document.addEventListener("DOMContentLoaded", () => {
-        const footerElement = document.querySelector(".footer");
-        if (footerElement) {
-          fetch("/footer.html")
-            .then((response) => response.text())
-            .then((data) => {
-              footerElement.innerHTML = data;
-            })
-            .catch((err) => console.error("Error loading footer:", err));
-        } else {
-          console.error("footer element not found!");
-        }
-      });
-    </script>
+      <!-- =========================================================================== -->
 
-    <script src="../assets/js/app.js"></script>
+      <!-- Footer -->
+      <div class="footer"></div>
+      <script>
+        // load the navbar dynamically
+        document.addEventListener("DOMContentLoaded", () => {
+          const footerElement = document.querySelector(".footer");
+          if (footerElement) {
+            fetch("footer.html")
+              .then((response) => response.text())
+              .then((data) => {
+                footerElement.innerHTML = data;
+              })
+              .catch((err) => console.error("Error loading footer:", err));
+          } else {
+            console.error("footer element not found!");
+          }
+        });
+      </script>
+
+      <script src="../assets/js/app.js"></script>
+    </div>
   </body>
 </html>
