@@ -39,3 +39,9 @@ body {
   font-weight: bold; /* Make it bold */
   text-decoration: underline 2px; /* Underline the active link */
 }
+
+/* Body */
+.h1 {
+  align-items: center;
+  justify-content: center;
+}

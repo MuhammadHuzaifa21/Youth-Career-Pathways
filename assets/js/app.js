@@ -1,16 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Get the current page path
+  // Get the current page name from the URL
   const currentPage = window.location.pathname.split("/").pop();
 
-  // Get all navbar links
+  // Select all navbar links
   const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-  // Loop through links to apply the active class
+  // Debugging: Log the current page
+  console.log("Current Page:", currentPage);
+
+  // Loop through each link to check if it matches the current page
   navLinks.forEach((link) => {
-    // Extract the href of the link
     const linkPage = link.getAttribute("href");
 
-    // If the href matches the current page, add the active class
+    // Debugging: Log the href of each link
+    console.log("Link Href:", linkPage);
+
+    // Match the href with the current page
     if (linkPage === currentPage) {
       link.classList.add("active");
     } else {
