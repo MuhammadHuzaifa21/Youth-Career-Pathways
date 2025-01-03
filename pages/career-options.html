@@ -55,25 +55,34 @@
 
     <!-- ========================================================================= -->
 
-    <!-- Footer -->
-    <div class="footer"></div>
-    <script>
-      // load the navbar dynamically
-      document.addEventListener("DOMContentLoaded", () => {
-        const footerElement = document.querySelector(".footer");
-        if (footerElement) {
-          fetch("footer.html")
-            .then((response) => response.text())
-            .then((data) => {
-              footerElement.innerHTML = data;
-            })
-            .catch((err) => console.error("Error loading footer:", err));
-        } else {
-          console.error("footer element not found!");
-        }
-      });
-    </script>
+      <!-- Footer -->
+      <div class="footer m-3" style="position:fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      background: #292f36;
+      color: #fff;
+      text-align: center;
+      line-height: 20px;"></div>
+      <script>
+        // load the navbar dynamically
+        document.addEventListener("DOMContentLoaded", () => {
+          const footerElement = document.querySelector(".footer");
+          if (footerElement) {
+            fetch("footer.html")
+              .then((response) => response.text())
+              .then((data) => {
+                footerElement.innerHTML = data;
+              })
+              .catch((err) => console.error("Error loading footer:", err));
+          } else {
+            console.error("footer element not found!");
+          }
+        });
+      </script>
 
-    <script src="../assets/js/app.js"></script>
+      <script src="../assets/js/app.js"></script>
+    </div>
   </body>
 </html>
