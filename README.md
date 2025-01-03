@@ -2,6 +2,8 @@
 
 A website designed for Youth exploring new Careers, Interview guidelines, and other resources. This project uses **HTML**, **CSS**, and **JavaScript** for its implementation.
 
+![image](https://github.com/user-attachments/assets/b06428b2-41fc-4da7-a53c-64c604a6cf28)
+
 ---
 
 ## Table of Contents
@@ -82,7 +84,10 @@ Follow these steps to set up the project locally:
    - To run it locally.
 
 4. **Start the Server**:
-   Start the http server and navigate to `http://127.0.0.1:8080` in your browser.
+   - Start the http server and navigate to `http://127.0.0.1:8080` in your browser.
+   - Then, click on **pages/**
+   
+   ![image](https://github.com/user-attachments/assets/960f636d-f924-4bad-8adc-64559151645f)
 
 ---
 
