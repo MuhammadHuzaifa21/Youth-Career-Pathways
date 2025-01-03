@@ -21,6 +21,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Galindo&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
@@ -30,7 +34,7 @@
   <body>
     <div>
       <!-- Navbar -->
-      <a class="nav-link home active" href="/index.html"></a>
+      <a class="nav-link home active" href="index.html"></a>
 
       <div class="navbar-placeholder"></div>
 
@@ -54,8 +58,8 @@
       <!-- =========================================================================== -->
       <!-- Body -->
       <div class="container">
-        <div class="welcome-message text-center p-5 mt-5">
-          <h3 class="p-3 m-3" style="color: rgb(255, 255, 255, 0.5)">
+        <div class="welcome-message text-center p-5 mt-5" ">
+          <h3 class="p-3 m-3" style="color: rgb(255, 255, 255, 0.5); font-family: 'Galindo', sans-serif;">
             Welcome To
           </h3>
           <h1
@@ -63,7 +67,7 @@
             style="
               font-family: 'Kaushan Script', cursive, sans-serif;
               color: #4ecdc4;
-              font-weight: bolder;
+              font-weight: bold;
             "
           >
             Youth Career Pathways
@@ -81,12 +85,45 @@
             </a>
           </h4>
         </div>
+
+        <!-- Importance of Career -->
+        <div class="card text-center" style="color: white; border-color: #4ecdc4; border-width:0.5ch; border-style: groove;">
+          <div class="card-header" style="text-decoration: underline; text-underline-offset: 5px; background-color: #292f36; border-color:#4ecdc4;">
+            <h5>Importance of Career Exploration </h5>
+          </div>
+          <div class="card-body">
+            <p>Career exploration is a crucial step in building a fulfilling and successful future. It allows individuals, especially students, to understand their interests, skills, and values while discovering the vast opportunities available in the job market. By exploring various career paths, students can make informed decisions about their education and professional journey.</p>
+            <h6 class="card-title"><p style="font-weight: bold;">Key benefits of career exploration include:</p></h6>
+            <p class="card-text">
+              <li>
+                <ul>Self-Awareness: Helps individuals identify their strengths, weaknesses, and passions.</ul>
+                <ul>Goal Setting: Provides clarity in setting realistic and achievable career goals.</ul>
+                <ul>Skill Development: Highlights the skills required for specific roles, encouraging targeted learning..</ul>
+                <ul>Informed Choices: Reduces uncertainty and enhances decision-making by providing insights into diverse career options.</ul>
+                <ul>Adaptability: Prepares students for a rapidly changing job market by exposing them to evolving industries.</ul>
+              </li>
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          <div class="card-footer text-muted">
+            2 days ago
+          </div>
+        </div>
+            
       </div>
 
       <!-- ========================================= color: #4ecdc4;================================== -->
 
       <!-- Footer -->
-      <div class="footer"></div>
+      <div class="footer" style="position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background: #333;
+      color: #fff;
+      text-align: center;
+      line-height: 50px;"></div>
       <script>
         // load the navbar dynamically
         document.addEventListener("DOMContentLoaded", () => {
