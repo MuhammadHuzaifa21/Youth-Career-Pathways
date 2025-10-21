@@ -127,8 +127,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Commit History
 
-You can display the commit history dynamically using the following badge:
-
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/MuhammadHuzaifa21/Youth-Career-Pathways)
 
 ---
